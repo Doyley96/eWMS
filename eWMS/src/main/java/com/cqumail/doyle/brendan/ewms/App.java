@@ -14,6 +14,8 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    public static int currentCustomerID;
+    public static int currentBookingID;
 
     @Override
     public void start(Stage stage) throws IOException {

@@ -47,6 +47,8 @@
             <TextField fx:id="txtStrNum" GridPane.columnIndex="3" />
             <TextField fx:id="txtStrName" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <TextField fx:id="txtSuburb" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label text="Tips Counter: " GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="lblTips" text="2" GridPane.columnIndex="3" GridPane.rowIndex="3" />
          </children>
       </GridPane>
       <Label layoutX="295.0" layoutY="109.0" text="CustomerID: " />

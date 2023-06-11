@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.cqumail.doyle.brendan.ewms.FXMLMenuController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cqumail.doyle.brendan.ewms.FXMLMenuController">
    <children>
       <Label layoutX="196.0" layoutY="50.0" text="eWaste Management System">
          <font>
@@ -45,12 +44,7 @@
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#btnSearchBooking" prefHeight="78.0" prefWidth="151.0" text="Search Booking" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#btnSearchCustomer" prefHeight="78.0" prefWidth="149.0" text="Search Customer" GridPane.columnIndex="2">
+            <Button mnemonicParsing="false" onAction="#btnSearch" prefHeight="78.0" prefWidth="149.0" text="Search" GridPane.columnIndex="2">
                <font>
                   <Font size="16.0" />
                </font>

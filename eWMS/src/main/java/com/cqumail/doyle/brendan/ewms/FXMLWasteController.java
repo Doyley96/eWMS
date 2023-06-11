@@ -5,12 +5,20 @@
 package com.cqumail.doyle.brendan.ewms;
 
 import java.io.IOException;
+import java.net.URL;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class FXMLWasteController {
+public class FXMLWasteController implements Initializable {
+    
+    ErrorHandler EH = new ErrorHandler();
 
     @FXML
     private Label lblBookingID;
@@ -59,6 +67,12 @@ public class FXMLWasteController {
 
     @FXML
     private TextField txtM5;
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        lblCustomerID.setText(String.format("%d", App.currentCustomerID));
+        lblBookingID.setText(String.format("%d", App.currentBookingID));
+    }
 
     @FXML
     void btnExit(ActionEvent event) throws IOException {
